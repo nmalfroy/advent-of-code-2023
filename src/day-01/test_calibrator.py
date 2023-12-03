@@ -66,8 +66,8 @@ def test_get_line_calibration(test_input: str, expected: int):
 @pytest.mark.parametrize(
     "test_path,replace_words,expected",
     [
-        ("src/day-1/resources/test_input_part_1", False, 142),
-        ("src/day-1/resources/test_input_part_2", True, 281),
+        ("src/day-01/resources/test_input_part_1", False, 142),
+        ("src/day-01/resources/test_input_part_2", True, 281),
     ],
 )
 def test_get_file_calibration_from_website_data(
