@@ -51,3 +51,14 @@ def test_get_matched_value(str: str, expected: int):
 )
 def test_count_scratch_from_file(path: str, expected: int):
     assert scratch_ticket.count_scratch_from_file(path) == expected
+
+
+@pytest.mark.parametrize(
+    "path,expected",
+    [
+        ("src/day-04/resources/test_input", 30),
+        ("src/day-04/resources/input", 9924412),
+    ],
+)
+def test_count_scratch_tickets_from_file(path: str, expected: int):
+    assert scratch_ticket.count_scratch_tickets_from_file(path) == expected
