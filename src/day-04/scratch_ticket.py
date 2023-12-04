@@ -29,10 +29,6 @@ class ScratchTicket(NamedTuple):
         )
 
 
-# class ScratchTicketBucket(NamedTuple):
-#     scratch_tickets: list[ScratchTicket]
-
-
 def count_tickets(
     scratch_tickets: list[ScratchTicket],
     start_index: int,
